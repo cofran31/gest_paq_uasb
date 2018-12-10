@@ -9,7 +9,7 @@
 
 Ver [Demo](https://samirhodzic.github.io/sudoku-solver-js)
 
-### How to use?
+### ¿Cómo utilizar?
 
 ```bash
 $ npm install gest_paq_uasb
