@@ -2,12 +2,9 @@
 
 > Simple Sudoku solver in javascript.
 
-[![npm-url][npm-url-svg]][npm-url]
-[![build-url][build-url-svg]][build-url]
-[![Dev Dependencies][dev-dependencies]][dev-dependencies-url]
-[![Dependencies][dependencies]][dependencies-url]
 
-Ver [Demo](https://samirhodzic.github.io/sudoku-solver-js)
+
+Ver [Demo](https://#)
 
 ### ¿Cómo utilizar?
 
@@ -37,11 +34,4 @@ Salida:
 $ npm test
 ```
 
-[build-url]: https://travis-ci.org/SamirHodzic/sudoku-solver-js
-[build-url-svg]: https://travis-ci.org/SamirHodzic/sudoku-solver-js.svg?branch=master
-[dependencies]: https://david-dm.org/samirhodzic/sudoku-solver-js.svg
-[dependencies-url]: https://david-dm.org/samirhodzic/sudoku-solver-js
-[dev-dependencies]: https://david-dm.org/samirhodzic/sudoku-solver-js/dev-status.svg
-[dev-dependencies-url]: https://david-dm.org/samirhodzic/sudoku-solver-js?type=dev
-[npm-url-svg]: https://img.shields.io/npm/v/sudoku-solver-js.svg
-[npm-url]: https://www.npmjs.com/package/sudoku-solver-js
+
