@@ -17,12 +17,14 @@ function ResolverSudoku() {
             return testGrid;
         }
     }
+
     function convertVector(vector) {
         var separador = "";
         var arregloDeSubCadenas = vector.split(separador);
         return arregloDeSubCadenas.map(Number);
     }
-    this.solve = function (cad) {
+
+    function solution(cad) {
         cad = convertVector(cad);
         var testGrid = cad;
         var myFunction = function R(a, i, j, m, g) {
@@ -38,4 +40,15 @@ function ResolverSudoku() {
             return testGrid;
         }
     }
+    this.solve = function (cad) {
+        return solution(cad);
+    }
 }
+if (typeof exports !== 'undefined') {
+    if (typeof module !== 'undefined' && module.exports) {
+      exports = module.exports = ResolverSudoku;
+    }
+    exports.ResolverSudoku = ResolverSudoku;
+  } else {
+    window.ResolverSudoku = ResolverSudoku;
+  }
