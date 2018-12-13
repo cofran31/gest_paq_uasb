@@ -1,0 +1,33 @@
+﻿<html>
+
+<head>
+  <title>test</title>
+  <script language="javascript" src="index.js"></script>
+</head>
+
+<body>
+  <script>
+    var solver = new ResolverSudoku();
+
+    var cadena = '001700509573024106800501002700295018009400305652800007465080071000159004908007053';
+    var vector = [0, 0, 1, 7, 0, 0, 5, 0, 9, 5, 7, 3, 0, 2, 4, 1, 0, 6, 8, 0, 0, 5, 0, 1, 0, 0, 2, 7, 0, 0, 2, 9, 5, 0,
+      1, 8, 0, 0, 9, 4, 0, 0, 3, 0, 5, 6, 5, 2, 8, 0, 0, 0, 0, 7, 4, 6, 5, 0, 8, 0, 0, 7, 1, 0, 0, 0, 1, 5, 9, 0, 0,
+      4, 9, 0, 8, 0, 0, 7, 0, 5, 3
+    ];
+
+    var result1 = solver.solve(cadena);
+    var result2 = solver.solve(vector);
+    var result3 = solver.solve(cadena, "cadena");
+    var result4 = solver.solve(vector, "vector");
+    var result5 = solver.solve(cadena, "vector");
+    var result6 = solver.solve(vector, "cadena");
+    console.log(result1);
+    console.log(result2);
+    console.log(result3);
+    console.log(result4);
+    console.log(result5);
+    console.log(result6);
+  </script>
+</body>
+
+</html>
