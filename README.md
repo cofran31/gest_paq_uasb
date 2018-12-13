@@ -17,23 +17,33 @@ simplemente incluya `index.js` en su archivo HTML para el uso del navegador.
 Ejemplo de uso:
 ```javascript
 var ResolverSudoku = require('gest_paq_uasb');
+
+
 var solver = new ResolverSudoku();
 
+
 var cadena = '001700509573024106800501002700295018009400305652800007465080071000159004908007053';
+
 
 var vector = [0, 0, 1, 7, 0, 0, 5, 0, 9, 5, 7, 3, 0, 2, 4, 1, 0, 6, 8, 0, 0, 5, 0, 1, 0, 0, 2, 7, 0, 0, 2, 9, 5, 0,
         1, 8, 0, 0, 9, 4, 0, 0, 3, 0, 5, 6, 5, 2, 8, 0, 0, 0, 0, 7, 4, 6, 5, 0, 8, 0, 0, 7, 1, 0, 0, 0, 1, 5, 9, 0, 0,
         4, 9, 0, 8, 0, 0, 7, 0, 5, 3
         ];
-`` Opcion de entrada        
+        
+        
+Opciones de entrada        
+
 var result = solver.solve(cadena);
-*o*
+
+o
+
 var result = solver.solve(vector);
-```
+
+
 Salida:
-```javascript
+
 '241768539573924186896531742734295618189476325652813497465382971327159864918647253'
-```
+
 ### Opcion de salidas
 
 var result = solver.solve(cadena, "cadena");
