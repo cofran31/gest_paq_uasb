@@ -40,15 +40,23 @@ function ResolverSudoku() {
             return testGrid;
         }
     }
-    this.solve = function (cad) {
-        return solution(cad);
+    this.solve = function (cad, type) {
+        var resp = solution(cad);
+        if (type == 'cadena') {
+         return resp.join("");
+        } else if (type == 'vector') {
+            return resp;
+        }else {
+            return "Opcion invalida! "
+        }
+
     }
 }
 if (typeof exports !== 'undefined') {
     if (typeof module !== 'undefined' && module.exports) {
-      exports = module.exports = ResolverSudoku;
+        exports = module.exports = ResolverSudoku;
     }
     exports.ResolverSudoku = ResolverSudoku;
-  } else {
+} else {
     window.ResolverSudoku = ResolverSudoku;
-  }
+}
